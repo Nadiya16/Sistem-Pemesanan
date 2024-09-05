@@ -124,6 +124,11 @@ public class CRUDbrand extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setText("Id_brand");
 
+        idbrand.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idbrandActionPerformed(evt);
+            }
+        });
         idbrand.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 idbrandKeyPressed(evt);
@@ -157,6 +162,12 @@ public class CRUDbrand extends javax.swing.JFrame {
         hapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hapusActionPerformed(evt);
+            }
+        });
+
+        cari.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cariActionPerformed(evt);
             }
         });
 
@@ -339,9 +350,17 @@ public class CRUDbrand extends javax.swing.JFrame {
        String id_brand = table.getValueAt(baris, 0).toString();
        idbrand.setText(id_brand);
        String nm_brand = table.getValueAt(baris, 1).toString();
-       nmbrand.setText(nm_brand);
+       nmbrand.setText(nm_brand);  
        
     }//GEN-LAST:event_tableMouseClicked
+
+    private void idbrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idbrandActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idbrandActionPerformed
+
+    private void cariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cariActionPerformed
 
     /**
      * @param args the command line arguments
